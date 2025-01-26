@@ -1,6 +1,6 @@
 body{
     font-family: 'Yugioh',serif;
-    background-image: url(../imagens/fundo_site.png) ;
+    background-image: url(../imagens/fundo_site.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -8,6 +8,10 @@ body{
     flex-direction: column;
     min-height: 100vh;
     gap: 30px;
+}
+
+.logo{
+    max-width: 320px;
 }
 
 .cabecalho{
@@ -23,10 +27,10 @@ body{
     opacity: 0;
     display: flex;
     flex-direction: column;
-    padding: 12px;
-    gap: 5px;
+    padding: 10px;
     position: absolute;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .cartao.selecionado{
@@ -64,6 +68,7 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
+    
 }
 
 .cartao .nivel-carta{
@@ -71,14 +76,19 @@ body{
     justify-content: flex-end;
     margin-right: 10px;
     gap: 5px;
+    margin-top: 2%;
 }
 
 .cartao .imagem-carta{
     max-width: 260px;
     align-self: center;
+    border-radius: 2%;
+    margin-top: 2%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .cartao .informacoes{
+    margin-top: 2%;
     border-radius: 5px;
     max-width: 300px;
     color: #000000;
@@ -110,24 +120,24 @@ span{
 }
 
 .fundo-1{
-    background: url(../imagens/fundo-1.jpg);
+    background: url(../imagens/fundo-5.jpg);
 }
 .fundo-2{
-    background: url(../imagens/fundo-2.jpg);
+    background: url(../imagens/fundo-5.jpg);
 }.fundo-3{
-    background: url(../imagens/fundo-3.jpg);
+    background: url(../imagens/fundo-5.jpg);
 }.fundo-4{
-    background: url(../imagens/fundo-4.jpg);
+    background: url(../imagens/fundo-5.jpg);
 }.fundo-5{
     background: url(../imagens/fundo-5.jpg);
 }.fundo-6{
-    background: url(../imagens/fundo-6.jpg);
+    background: url(../imagens/fundo-5.jpg);
 }.fundo-7{
-    background: url(../imagens/fundo-7.jpg);
+    background: url(../imagens/fundo-5.jpg);
 }
 
 .btn-seta{
-    background-color: #ffffff;
+    background-color: #ffffff94;
     width: 70px;
     height: 70px;
     display: flex;
@@ -142,10 +152,11 @@ span{
 
 .btn-seta.btn-voltar{
     transform: rotateY(180deg);
+    
 }
 
 .btn-seta:hover{
-    background-color: #8351fe ;
+    background-color: #9b7b11c5 ;
 }
 
 body::-webkit-scrollbar-track{
@@ -153,7 +164,7 @@ body::-webkit-scrollbar-track{
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 9px;
 }
 
 ::-webkit-scrollbar-thumb {
