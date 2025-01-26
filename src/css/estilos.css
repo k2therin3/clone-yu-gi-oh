@@ -1,6 +1,6 @@
 body{
     font-family: 'Yugioh',serif;
-    background-image: url(../imagens/fundo-site.jpg) ;
+    background-image: url(../imagens/fundo_site.png) ;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -26,6 +26,7 @@ body{
     padding: 12px;
     gap: 5px;
     position: absolute;
+    border-radius: 10px;
 }
 
 .cartao.selecionado{
