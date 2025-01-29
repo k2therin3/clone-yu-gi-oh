@@ -4,6 +4,20 @@ const btnAvancar = document.getElementById("btn-avancar");
 const btnVoltar = document.getElementById("btn-voltar");
 const cartoes = document.querySelectorAll(".cartao");
 let cartaoAtual = 0;
+
+cartoes.forEach((cartao) => {
+    cartao.addEventListener("click",function(){
+        const cartaVirada = cartao.querySelector(".carta-virada");
+        //virar o cartão
+        cartao.classList.toggle("virar");
+        //mostrar o fundo da carta
+        cartaVirada.classList.toggle("mostrar-fundo-carta");
+
+        const descricao = cartao.querySelector(".descricao");
+        descricao.classList.toggle("esconder");
+    });
+});
+
 // - passo 2 - dar um jeito de identificar o clique do usuário na seta avançar
 btnAvancar.addEventListener("click",function(){
 
